@@ -11,7 +11,7 @@ FROM node:14 AS production
 WORKDIR /
 COPY --from=build /package*.json ./
 RUN npm install --only=production
-COPY --from=build /app.js ./
+COPY --from=build / ./
 # COPY --from=build /app/build ./build
 EXPOSE 80
 CMD [ "node", "app.js" ]
