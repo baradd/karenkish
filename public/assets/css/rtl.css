@@ -1,0 +1,381 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: sahel, sans-serif !important;
+}
+
+
+
+
+.ps-0 {
+    padding-right: 0!important;
+}
+.navbar-brand {
+    margin-right: 0;
+}
+.form-check .form-check-input {
+    float: right;
+}
+.navbar-area .main-nav .navbar .navbar-nav {
+    margin-right: auto;
+    margin-left: 0;
+}
+.navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-toggle::after {
+    margin-right: .355em;
+    margin-left: 0;
+}
+.navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+.navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li::before {
+    right: 0;
+    left: auto;
+}
+.choose-area .home-choose-img {
+    padding-left: 30px;
+    padding-right: 0;
+}
+.choose-area .home-choose-img::before {
+    right: -15%;
+    left: auto;
+    border-top-left-radius: 70px;
+}
+.choose-area .home-choose-content .section-tittle p {
+    padding-left: 22%;
+    padding-right: 0;
+}
+.choose-area .home-choose-content ul li {
+    padding-right: 22px;
+    padding-left: 0;
+}
+.choose-area .home-choose-content ul li i {
+    right: 0;
+    left: auto;
+}
+.home-admission .single-addmission {
+
+}
+.home-admission .single-addmission .admission-circle {
+
+}
+.home-admission .single-addmission .admission-content {
+
+}
+.home-admission .box-btn {
+
+}
+.home-admission .single-addmission .loon {
+
+}
+.home-admission .single-addmission .admission-content .admission-list li {
+
+}
+.course-slider-area .course-slider .box-btn {
+
+}
+.course-slider-area .course-slider .border-btn {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.home-teachers-area .single-home-teacher .teachers-content {
+    right: 12px;
+    left: auto;
+}
+.home-contact-area .home-contact-content {
+    right: -20%;
+    left: auto;
+}
+.list-unstyled {
+    padding-right: 0;
+}
+.footer-area .footer-left p {
+    padding-left: 10%;
+    padding-right: 0;
+}
+.footer-area .footer-left .footer-social li a {
+    margin-left: 5px;
+    margin-right: 0;
+}
+.fml-15 {
+    margin-right: 13%;
+    margin-left: 0;
+}
+.fml-25 {
+    margin-right: 25%;
+    margin-left: 0;
+}
+a.scroll-top {
+    left: 10px;
+    right: auto;
+}
+.about-area .about-content-right button {
+    left: 30px;
+    right: auto;
+}
+.about-area .about-content-right .consultation-area .box-btn {
+
+}
+.about-area .single-about .about-contnet p {
+    padding-left: 5%;
+    padding-right: 0;
+}
+.about-area .about-btn .box-btn {
+
+}
+.pagination {
+    padding-right: 0;
+    padding-left: 0;
+}
+.single-class-area .class-content-right button {
+    left: 30px;
+    right: auto;
+}
+.single-class-area .class-content-right .consultation-area .box-btn {
+
+}
+.single-class-area .single-class .class-contnet p {
+    padding-left: 5%;
+    padding-right: 0;
+}
+.single-class-area .class-btn .box-btn {
+
+}
+.single-event .right-content .about-search {
+
+}
+.single-event .right-content button {
+
+}
+.single-event .right-content .box-btn {
+
+}
+.single-event .event-slider .content p {
+
+}
+.single-event .share {
+
+}
+.single-news-area .news-content-right .about-search {
+
+}
+.single-news-area .news-content-right button {
+
+}
+.single-news-area .news-content-right .consultation-area .box-btn {
+
+}
+.single-news-area .news-slider .content p {
+
+}
+.single-news-area .share {
+
+}
+.single-news-area .share .share-p {
+
+}
+.single-news-area .more-news .box-btn {
+
+}
+.single-teacher-area .right-content .about-search {
+    padding-right: 18px;
+    padding-left: 0;
+}
+.single-teacher-area .right-content button {
+    left: 30px;
+    right: auto;
+}
+.single-teacher-area .right-content .single-teacher:hover {
+    transform: translateX(-20px);
+}
+.single-teacher-area .teacher-slider .single-slider .content p {
+
+}
+.teachers-area .single-teacher .teachers-content {
+    right: 12px;
+    left: auto;
+}
+.admission-area .admission-form label {
+    padding-right: 15px;
+    padding-left: 0;
+}
+.admission-area .admission-form .box-btn {
+
+}
+.price-area .single-price .box-btn {
+
+}
+.gallery-area .all-gall li {
+    margin-left: 10px;
+    margin-right: 0;
+}
+.gallery-area .gall-list .single-gall:hover .gall-content {
+    transform: translateX(-105%);
+}
+.testimonials-area .single-testimonials {
+    text-align: right;
+}
+.testimonials-area .single-testimonials .testimonials-head .content h2::before {
+    right: -60px;
+    left: auto;
+}
+.form-check {
+    padding-right: 1.25rem;
+    padding-left: 0;
+}
+.form-check-input {
+    margin-right: -1.25rem;
+    margin-left: 0;
+}
+.signup-area .signup-form .already {
+    margin-right: 20px;
+    margin-left: 0;
+}
+.signup-area .signup-form .box-btn {
+
+}
+.faq-area .faq-content .faq-accordion .accordion .accordion-item .accordion-title i {
+    left: 20px;
+    right: auto;
+}
+/*
+Responsive CSS
+============================*/
+@media only screen and (max-width: 767px) {
+    .mean-container a.meanmenu-reveal {
+        left: 15px !important;
+        right: auto !important;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        width: 90%;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        text-align: left;
+        left: 0;
+        right: auto;
+    }
+    .mean-container .mean-nav ul li a {
+        text-align: right;
+    }
+    .mobile-nav .logo {
+        right: 15px !important;
+        left: auto !important;
+    }
+
+    .choose-area .home-choose-img {
+        padding-left: 0;
+    }
+    .choose-area .home-choose-content .section-tittle p {
+        padding-left: 0;
+    }
+    .home-admission .single-addmission {
+
+    }
+    .home-admission .single-addmission .admission-content {
+
+    }
+    .home-admission .single-addmission .admission-circle {
+
+    }
+    .home-contact-area .home-contact-content {
+        right: 0;
+    }
+    .pr-0, .px-0 {
+        padding-left: 10px!important;
+    }
+    .footer-area .fml-25, .footer-area .fml-15 {
+        margin-right: 0;
+    }
+    .choose-area .home-choose-content .box-btn {
+
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+.home-admission .single-addmission .admission-circle {
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mean-container a.meanmenu-reveal {
+        left: 15px !important;
+        right: auto !important;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        width: 90%;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        text-align: left;
+        left: 0;
+        right: auto;
+    }
+    .mean-container .mean-nav ul li a {
+        text-align: right;
+    }
+    .mobile-nav .logo {
+        right: 15px !important;
+        left: auto !important;
+    }
+    .choose-area .home-choose-img {
+        padding-left: 0;
+    }
+    .choose-area .home-choose-content .section-tittle p {
+        padding-left: 0;
+    }
+    .home-contact-area .home-contact-content {
+        right: 0;
+    }
+    .pr-0, .px-0 {
+        padding-left: 10px!important;
+    }
+    .footer-area .fml-25, .footer-area .fml-15 {
+        margin-right: 0;
+    }
+    .home-ragular-course .sst-10 {
+        right: 25%;
+        left: auto;
+    }
+    .home-admission .single-addmission .admission-circle {
+
+    }
+    .home-admission .single-addmission {
+        right: 0;
+        border-radius: 0 230px 230px 0;
+    }
+    .home-admission .single-addmission .admission-content .admission-list {
+
+    }
+    .home-news .sst-10 {
+
+    }
+    .choose-area .home-choose-content .box-btn {
+
+    }
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+   .home-admission .single-addmission .admission-circle {
+
+    }
+    .home-admission .single-addmission {
+        right: 0;
+        border-radius: 0 230px 230px 0;
+    }
+    .home-admission .single-addmission .admission-content .admission-list {
+
+    }
+    .home-admission .single-addmission .admission-content {
+
+    }
+    .navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+        width: 215px;
+    }
+    .single-event .share {
+
+    }
+}
+
+@media only screen and (min-width: 1824px) {
+   
+}
