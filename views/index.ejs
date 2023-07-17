@@ -1,0 +1,440 @@
+<!-- Slider area -->
+<section class="slider-area">
+  <div class="home-slider owl-carousel owl-theme">
+    <div class="single-slider single-slider-bg-1">
+      <div class="d-table">
+        <div class="d-table-cell">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12 text-center">
+                <div class="slider-tittle one">
+                  <h1>
+                    ما در مجموعه کارن بر رشد فرزندان شما متمرکز می شویم
+                  </h1>
+                  <p>
+                    مجموعه کارن با بهره گیری از مجرب ترین اساتید و مربی ها و همچنین به روز ترین امکانات آموزشی محیطی مطمئن برای شکوفایی فرزندان شما می باشد
+                  </p>
+                </div>
+                <div class="slider-btn bnt1 text-center">
+                  <a href="/events" class="box-btn">رویداد ها</a>
+                  <a href="/courses" class="border-btn">مشاهده دوره ها</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="single-slider single-slider-bg-2">
+      <div class="d-table">
+        <div class="d-table-cell">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-12 text-center">
+                <div class="slider-tittle two">
+                  <h1>
+                    ما در مجموعه کارن بر رشد فرزندان شما متمرکز می شویم
+                  </h1>
+                  <p>
+                    مجموعه کارن با بهره گیری از مجرب ترین اساتید و مربی ها و همچنین به روز ترین امکانات آموزشی محیطی مطمئن برای شکوفایی فرزندان شما می باشد
+                  </p>
+                </div>
+                <div class="slider-btn bnt2">
+                  <a href="admission.html" class="box-btn">پذیرش</a>
+                  <a href="special-class.html" class="border-btn">مشاهده دوره ها</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Slider aera -->
+
+<!-- Service area -->
+<section class="service-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <div class="single-service text-center">
+          <div class="service-icon">
+            <i class="flaticon-clock"></i>
+          </div>
+          <div class="service-content">
+            <h2>ساعت کاری</h2>
+            <p>شنبه - پنجشنبه : 70:00 صبح - 01:00 ظهر و<br> 04:00 عصر - 09:00 شب</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="single-service text-center">
+          <div class="service-icon">
+            <i class="flaticon-pin"></i>
+          </div>
+          <div class="service-content">
+            <h2>آدرس</h2>
+            <p> دفتر مرکزی: بجنورد - خیابان طالقانی شرقی - کوچه جاجرمی - نبش عمارت</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="single-service text-center sst-10">
+          <div class="service-icon">
+            <i class="flaticon-telephone"></i>
+          </div>
+          <div class="service-content">
+            <h2>تلفن</h2>
+            <p>058-32221441</p>
+            <p>058-32211295-7</p>
+            <p>058-32237724</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End Service area -->
+
+<div class="shape-ellips">
+  <img src="/assets/images/shape.png" alt="shape" />
+</div>
+
+<!-- Regular Course area  -->
+
+<section class="home-ragular-course pb-100">
+  <div class="container">
+    <div class="section-tittle text-center">
+      <h2>دوره ها و کلاس ها</h2>
+      <p>
+        مجموعه کارن با دارا بودن مجرب ترین اساتید در همه سطوح دوره برگزار می کند
+      </p>
+    </div>
+
+    <div class="row">
+      <% if(courses.length>0){ %>
+      <% for(let course of courses){  %>
+      <div class="col-lg-4 col-md-6">
+        <div class="single-ragular-course">
+          <div class="course-img">
+            <img src="/assets/images/courses/<%= course.image %>" alt="ragular" />
+            <h2><%= course.title %> </h2>
+          </div>
+          <div class="course-content">
+            <p>
+              <%- truncateTo200(course.body)%>...
+            </p>
+            <a href="/course?courseId=<%= course.id%>" class="border-btn">ادامه خواندن</a>
+          </div>
+        </div>
+      </div>
+      <% } %>
+      <% } %>
+
+
+
+    </div>
+  </div>
+</section>
+
+<!-- End Regular Course area  -->
+
+<!-- Choose area  -->
+<section class="choose-area">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-6 pr-0">
+        <div class="home-choose-img">
+          <img src="assets/images/choose1.png" alt="choose" />
+        </div>
+      </div>
+
+      <div class="col-lg-6 home-choose">
+        <div class="home-choose-content">
+          <div class="section-tittle">
+            <h2>چرا کارن را انتخاب کنید؟</h2>
+            <p>
+              تئوری انتخاب مدرسه فرض می کند که والدین بازیگرانی منطقی هستند که می توانند اطلاعات خود را جمع آوری و مصرف کنند تا مدرسه ای پیدا کنند که نیازهای فرزندشان مطابقت داشته باشد.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-sm-12 col-md-5">
+              <ul class="choose-list-left">
+                <li><i class="flaticon-check-mark"></i>دارای شعب مختلف</li>
+                <li> <i class="flaticon-check-mark"></i>رفتار عالی</li>
+                <li><i class="flaticon-check-mark"></i>مفید و مهربانی</li>
+                <li><i class="flaticon-check-mark"></i>یادگیری با سرگرمی</li>
+                <li><i class="flaticon-check-mark"></i>ایمنی کودکان</li>
+              </ul>
+            </div>
+            <div class="col-lg-8 col-sm-12 col-md-7">
+              <div class="choose-list-home">
+                <ul>
+                  <li> <i class="flaticon-check-mark"></i>محیط زیست دوستانه</li>
+                  <li> <i class="flaticon-check-mark"></i>غذا و آب سالم</li>
+                  <li> <i class="flaticon-check-mark"></i>مراقبت های بهداشتی با پزشکان معتبر</li>
+                  <li><i class="flaticon-check-mark"></i>زمین بازی بزرگ با پارک کودکان</li>
+                  <li><i class="flaticon-check-mark"></i>سرویس متناسب با راننده با تجربه</li>
+                </ul>
+              </div>
+            </div>
+            <a href="/aboutus" class="box-btn">بیشتر بدانید</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Choose area -->
+
+<!-- Admission Area -->
+<section class="home-admission">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="single-addmission">
+          <div class="row">
+            <div class="col-lg-4 col-md-5">
+              <div class="admission-circle">
+                <h2>کارنی <span> شوید </span></h2>
+                <div class="admission-shape1">
+                  <img src="assets/images/admission/shape1.png" alt="shape" />
+                </div>
+                <div class="admission-shape2">
+                  <img src="assets/images/admission/shape2.png" alt="shape" />
+                </div>
+                <div class="admission-shape3">
+                  <img src="assets/images/admission/shape3.png" alt="shape" />
+                </div>
+                <div class="admission-shape4">
+                  <img src="assets/images/admission/shape4.png" alt="shape" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-7">
+              <div class="admission-content">
+                <h2>شما هم می توانید به تیم کارن ملحق شوید</h2>
+                <!-- <p>پذیرش در 30 دی 1400 بسته خواهد شد. زمان باقی مانده است:</p> -->
+                <ul class="admission-list">
+                  <li>
+                    <p><%= statistics.numStudents %></p>
+                    <span>دانش آموزان</span>
+                  </li>
+                  <li>
+                    <p><%= statistics.numStaffs %></p>
+                    <span>کارکنان</span>
+                  </li>
+                  <li>
+                    <p><%= statistics.numExams %></p>
+                    <span>امتحانات</span>
+                  </li>
+                  <li>
+                    <p><%= statistics.numBranches%></p>
+                    <span>شعبه ها</span>
+                  </li>
+                </ul>
+                <!-- <a href="admission.html" class="box-btn">پذیرش کن</a> -->
+              </div>
+            </div>
+          </div>
+          <span class="loon">
+            <img src="assets/images/admission/shape5.png" alt="shape" />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Admission Area -->
+
+<!-- Special Course -->
+<!-- <section class="home-special-course">
+  <div class="container-fluid">
+    <div class="section-tittle text-center">
+      <h2>کلاسهای ویژه ما</h2>
+      <p>
+        دوره کالج یک کلاس است که توسط یک کالج یا دانشگاه ارائه می شود. این دوره ها معمولاً بخشی از برنامه های پیشرو هستند.
+      </p>
+    </div>
+
+    <div class="home-course-slider owl-carousel owl-theme">
+      <div class="single-home-special-course">
+        <div class="course-img">
+          <img src="assets/images/courses/img4.png" alt="course" />
+          <div class="course-content">
+            <h2>کلاس نقاشی</h2>
+            <p>
+              دروس نقاشی نوعی دستورالعمل رسمی در نواختن ساز موسیقی یا آواز خواندن است.
+            </p>
+            <a href="single-class.html" class="box-btn">ادامه خواندن</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="single-home-special-course">
+        <div class="course-img">
+          <img src="assets/images/courses/img5.png" alt="course" />
+          <div class="course-content">
+            <h2>آزمایشگاه علوم</h2>
+            <p>
+              دروس علوم نوعی دستورالعمل رسمی در نواختن ساز موسیقی یا آواز خواندن است.
+            </p>
+            <a href="single-class.html" class="box-btn">ادامه خواندن</a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="single-home-special-course">
+        <div class="course-img">
+          <img src="assets/images/courses/img6.png" alt="course" />
+          <div class="course-content">
+            <h2>کلاس موسیقی</h2>
+            <p>
+              دروس علوم نوعی دستورالعمل رسمی در نواختن ساز موسیقی یا آواز خواندن است.
+            </p>
+            <a href="single-class.html" class="box-btn">ادامه خواندن</a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="single-home-special-course">
+        <div class="course-img">
+          <img src="assets/images/courses/img7.png" alt="course" />
+          <div class="course-content">
+            <h2>کلاس هنر</h2>
+            <p>
+              دروس علوم نوعی دستورالعمل رسمی در نواختن ساز موسیقی یا آواز خواندن است.
+            </p>
+            <a href="single-class.html" class="box-btn">ادامه خواندن</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End Special Course -->
+
+<!-- Course Slider  -->
+<section class="course-slider-area">
+  <div class="container">
+    <div class="course-slider owl-carousel owl-theme">
+      <% if(events.length>0){ %>
+      <% for(let event of events){ %>
+      <div class="row align-items-center">
+        <div class="col-lg-5 col-md-5">
+          <div class="course-slider-img">
+            <img src="/assets/images/events/<%= event.image %>" alt="course" />
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-7">
+          <div class="course-slider-content">
+            <h2><%= event.title%> <span class="text-warning">||</span> <%= miladiToShamsi(event.date)%></h2>
+            <p>
+              <%- truncateTo200(event.body)%>...
+            </p>
+
+            <div class="course-slider-btn">
+              <a href="/event?eventId=<%= event.id %> " class="box-btn">ثبت نام کنید</a>
+              <a href="/events" class="border-btn">مشاهده رویدادها</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% } %>
+      <% } %>
+    </div>
+  </div>
+</section>
+<!-- End Course Slider -->
+
+<span class="left-shape">
+  <img src="assets/images/left-shape.png" alt="shape" />
+</span>
+
+<!-- News Area -->
+<section class="home-news pb-100 pt-100">
+  <div class="container">
+    <div class="section-tittle text-center">
+      <h2>آخرین اخبار وبلاگ</h2>
+      <p>
+        دوره کالج یک کلاس است که توسط یک کالج یا دانشگاه ارائه می شود. این دوره ها معمولاً بخشی از برنامه های پیشرو هستند.
+      </p>
+    </div>
+
+    <div class="row">
+      <% if(blogs.length>0){ %>
+      <% for(let blog of blogs){ %>
+      <div class="col-lg-4 col-md-6">
+        <div class="single-home-news">
+          <a href="/blog?blogId=<%= blog.id %>">
+            <img src="/assets/images/blogs/<%= blog.image %>" alt="news" />
+          </a>
+
+          <div class="single-home-content">
+            <h2><%=blog.title%> </h2>
+            <p class="calender">
+              <i class="flaticon-calendar"></i><%= miladiToShamsi(blog.createdAt)%>
+            </p>
+            <p>
+              <%- truncateTo200(blog.body)%>...
+            </p>
+            <a href="/blog?blogId=<%= blog.id %> " class="line-bnt">ادامه خواندن <i class="flaticon-left-arrow"></i></a>
+          </div>
+        </div>
+      </div>
+      <% } %> <% } %>
+    </div>
+  </div>
+</section>
+<!-- End News Area -->
+
+<!-- Teachers Area -->
+<section class="home-teachers-area">
+  <div class="container">
+    <div class="section-tittle text-center">
+      <h2>استادان محترم</h2>
+      <p>
+        دوره کالج یک کلاس است که توسط یک کالج یا دانشگاه ارائه می شود. این دوره ها معمولاً بخشی از برنامه های پیشرو هستند.
+      </p>
+    </div>
+
+    <div class="row">
+      <% if(teachers.length>0){ %>
+      <% for(let teacher of teachers){ %>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-home-teacher">
+          <div class="teacher-img">
+            <a href="/teachers">
+              <img src="/assets/images/teachers/<%= teacher.image%>" alt="teacher" /></a>
+          </div>
+          <div class="teachers-content">
+            <h2><%= teacher.fullname %></h2>
+            <p><%= teacher.level %> </p>
+          </div>
+          <div class="teacher-social">
+            <ul>
+              <li>
+                <a href="#"><i class="flaticon-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="flaticon-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="flaticon-envelope"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-long-arrow-alt-left"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <% } %>
+      <% } %>

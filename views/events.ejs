@@ -1,0 +1,116 @@
+<div class="page-content-wrapper ">
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="page-title-box">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <h4 class="page-title m-0">جدول رویدادها</h4>
+            </div>
+
+            <!-- end col -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end page-title-box -->
+      </div>
+    </div>
+    <!-- end page title -->
+
+    <div class="row">
+      <div class="col-12">
+        <div class="card m-b-30">
+          <div class="card-body">
+
+            <h4 class="mt-0 header-title">! مدیر عزیز</h4>
+            <p class="text-muted m-b-30 font-14">برای حذف رویداد بر روی دکمه حذف در سطر ان کلیک نموده و برای ویرایش دکمه ویرایش بزنید تا به صفحه مورد نظر هدایت شوید</p>
+
+            <div class="table-rep-plugin">
+              <div class="table-responsive b-0" data-pattern="priority-columns">
+                <table id="tech-companies-1" class="table  table-striped">
+                  <thead>
+                    <tr>
+                      <th data-priority="2" style="width: 15%;">رویداد</th>
+                      <th data-priority="3">برگزار کننده</th>
+                      <th data-priority="1">تاریخ برگزاری</th>
+                      <th data-priority="1">ساعت</th>
+                      <th data-priority="3">مدت زمان </th>
+                      <th data-priority="3">قیمت </th>
+                      <th data-priority="1" style="width: 30%;">محل برگزاری</th>
+                      <th data-priority="3">وضعیت </th>
+                      <th data-priority="6" style="width: 5%;"></th>
+
+                    </tr>
+                  </thead>
+                  <% if( events.length>0){ %>
+                  <tbody>
+                    <% for(event of events){ %>
+                    <tr>
+                      <th><%=event.title%></th>
+                      <td><%= event.organizer%></td>
+                      <td><%= miladiToShamsi(event.date) %> </td>
+                      <td><%= event.time %></td>
+                      <td><%= event.duration %>دقیقه</td>
+                      <td><%= event.price%>تومان</td>
+                      <td><%= event.place%></td>
+                      <td><%= event.status%></td>
+
+                      <th data-priority="6"><a href="/dashboard/edit-event?eventId=<%=event.id %> " class="btn btn-primary" type="submit">ویرایش</a></th>
+                      <th data-priority="6"><button class="btn btn-danger" type="button" onclick="deleteevent(this)" value="<%= event.id%>">حذف</button></th>
+                    </tr>
+                    <% } %>
+
+
+
+                  </tbody>
+                  <% }  else{ %>
+                  <tbody>
+                    <tr>
+                      <p>هیچ رویدادی در پایگاه داده یافت نشد</p>
+                    </tr>
+                  </tbody>
+
+                  <% } %>
+                </table>
+              </div>
+
+              <%- include('./includes/pagination.ejs') %>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end col -->
+    </div> <!-- end row -->
+
+  </div><!-- container fluid -->
+
+</div> <!-- Page content Wrapper -->
+
+<script>
+  $(function() {
+    $('.table-responsive').responsiveTable({
+      addDisplayAllBtn: 'btn btn-secondary'
+    });
+  });
+
+  function deleteevent(e) {
+
+
+    let id = e.getAttribute("value")
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = () => {
+      if (xhttp.status === 200) {
+        let tr = e.parentElement.parentElement;
+        let parent = e.parentElement.parentElement.parentElement;
+        parent.removeChild(tr)
+      }
+    }
+    xhttp.open("POST", '/dashboard/delete-event');
+    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+    xhttp.send(JSON.stringify({
+      id
+    }))
+  }
+</script>

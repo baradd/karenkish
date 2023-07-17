@@ -1,0 +1,97 @@
+<div class="page-content-wrapper ">
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="page-title-box">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <h4 class="page-title m-0">ویرایش اطلاعات اماری موسسه</h4>
+            </div>
+
+            <!-- end col -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end page-title-box -->
+      </div>
+    </div>
+    <!-- end page title -->
+
+    <div class="row">
+      <div class="col-12">
+        <div class="card m-b-30">
+          <div class="card-body">
+
+            <h4 class="mt-0 header-title"> ! مدیر عزیز</h4>
+            <p class="text-muted m-b-30">برای ویرایش روی مقدار هر فیلد کلید نموده سپس علامت تیک را بزنید در صورت منصرف
+              شدن ضربدر را بفشارید</p>
+
+            <table class="table table-striped mb-0">
+              <thead>
+                <tr>
+                  <th style="width: 50%;">آمار</th>
+                  <th>تعداد</th>
+                </tr>
+              </thead>
+              <tbody id="stats">
+                <tr>
+                  <td>دانش اموزان</td>
+                  <td>
+                    <a href="#" value="numStudents" id="inline-username" data-type="text"
+                      data-pk="1"><%=stats.numStudents%></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>کارکنان</td>
+                  <td>
+                    <a href="#" value="numStaffs" id="inline-username2" data-type="text"
+                      data-pk="2"><%= stats.numStaffs %> </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ازمون های برگزار شده</td>
+                  <td>
+                    <a href="#" value="numExams" id="inline-username3" data-type="text"
+                      data-pk="1"><%= stats.numExams%></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>تعداد شعبه ها</td>
+                  <td>
+                    <a href="#" value="numBranches" id="inline-username4" data-type="text"
+                      data-pk="1"><%= stats.numBranches %> </a>
+                  </td>
+                </tr>
+
+
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div> <!-- end col -->
+    </div> <!-- end row -->
+
+  </div><!-- container fluid -->
+
+</div> <!-- Page content Wrapper -->
+
+<script>
+  document.querySelector("#stats").addEventListener("click", (e) => {
+    if ($(e.target).hasClass('mdi') || $(e.target).hasClass('editable-submit')) {
+      let value = e.target.parentElement.parentElement.parentElement.firstElementChild.firstElementChild.value || e.target.parentElement.parentElement.firstElementChild.firstElementChild.value
+      let key = e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.firstElementChild.getAttribute('value') || e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.previousSibling.getAttribute("value");
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function () {
+      }
+      xhttp.open("POST", '/dashboard/edit-statistic')
+      xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xhttp.send(JSON.stringify({
+        key,
+        value
+      }))
+    }
+  })
+</script>

@@ -1,0 +1,325 @@
+  <div class="page-content-wrapper ">
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-title-box">
+            <div class="row align-items-center">
+              <div class="col-md-8">
+                <h4 class="page-title m-0">داشبورد</h4>
+              </div>
+
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end page-title-box -->
+        </div>
+      </div>
+      <!-- end page title -->
+
+      <div class="row">
+        <div class="col-xl-3 col-md-6">
+          <div class="card bg-primary mini-stat text-white">
+            <div class="p-3 mini-stat-desc">
+              <div class="clearfix">
+                <h6 class="text-uppercase mt-0 float-left text-white-50">تعداد پست ها</h6>
+                <h4 class="mb-3 mt-0 float-right"><%= numberOfBlogs%></h4>
+              </div>
+              <div>
+                <span class="badge badge-light text-info"> +11% </span> <span class="ml-2">از دوره قبلی</span>
+              </div>
+
+            </div>
+            <div class="p-3">
+              <div class="float-right">
+                <a href="#" class="text-white-50"><i class="mdi mdi-cube-outline h5"></i></a>
+              </div>
+              <!-- <p class="font-14 m-0">آخر : 1447</p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+          <div class="card bg-info mini-stat text-white">
+            <div class="p-3 mini-stat-desc">
+              <div class="clearfix">
+                <h6 class="text-uppercase mt-0 float-left text-white-50">تعداد رویداد ها</h6>
+                <h4 class="mb-3 mt-0 float-right"><%= numberOfEvents %> </h4>
+              </div>
+              <div>
+                <span class="badge badge-light text-danger"> -29% </span> <span class="ml-2">از دوره قبلی</span>
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="float-right">
+                <a href="#" class="text-white-50"><i class="mdi mdi-buffer h5"></i></a>
+              </div>
+              <!-- <p class="font-14 m-0">آخر : 46,785 تومان</p> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="card bg-pink mini-stat text-white">
+            <div class="p-3 mini-stat-desc">
+              <div class="clearfix">
+                <h6 class="text-uppercase mt-0 float-left text-white-50">تعداد دانش اموزان</h6>
+                <h4 class="mb-3 mt-0 float-right"><%= numberOfStudents %> </h4>
+              </div>
+              <div>
+                <span class="badge badge-light text-primary"> 0% </span> <span class="ml-2">از دوره قبلی</span>
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="float-right">
+                <a href="#" class="text-white-50"><i class="mdi mdi-tag-text-outline h5"></i></a>
+              </div>
+              <!-- <p class="font-14 m-0">آخر : 15.8</p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+          <div class="card bg-success mini-stat text-white">
+            <div class="p-3 mini-stat-desc">
+              <div class="clearfix">
+                <h6 class="text-uppercase mt-0 float-left text-white-50">تعداد معلمان</h6>
+                <h4 class="mb-3 mt-0 float-right"><%= numberOfTeachers %> </h4>
+              </div>
+              <div>
+                <span class="badge badge-light text-info"> +89% </span> <span class="ml-2">از دوره قبلی</span>
+              </div>
+            </div>
+            <div class="p-3">
+              <div class="float-right">
+                <a href="#" class="text-white-50"><i class="mdi mdi-briefcase-check h5"></i></a>
+              </div>
+              <!-- <p class="font-14 m-0">آخر : 1776</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+
+      <!-- <div class="row">
+        <div class="col-xl-9">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="mt-0 header-title">گزارش فروش ها</h4>
+              <div class="row">
+                <div class="col-lg-8">
+                  <div id="morris-line-example" class="morris-chart" style="height: 300px"></div>
+                </div>
+                <div class="col-lg-4">
+                  <div>
+                    <h5 class="font-14 mb-5">گزارش فروش سالانه</h5>
+
+                    <div>
+                      <h5 class="mb-3">2018 : 19523 تومان</h5>
+                      <p class="text-muted mb-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                      <a href="#" class="btn btn-primary btn-sm">ادامه مطلب <i class="mdi mdi-chevron-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="mt-0 header-title">تجزیه و تحلیل فروش</h4>
+              <div id="morris-donut-example" class="morris-chart" style="height: 300px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- end row  -->
+
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="mt-0 header-title mb-4">آخرین پیام ها</h4>
+              <div class="latest-massage" style="overflow-y: scroll; height: 370.078px !important;">
+                <% if(contactUsMsgs.length>0){ %>
+                <% for(let msg of contactUsMsgs){ %>
+                <a href="#" class="latest-message-list">
+                  <div class="border-bottom position-relative p-2">
+                    <div class="float-left user mr-3">
+                      <h5 class="bg-primary text-center rounded-circle text-white mt-0">v</h5>
+                    </div>
+
+                    <div class="message-time">
+                      <p class="ml-3 text-muted"><%= miladiToShamsi(msg.createdAt)%></p>
+                    </div>
+                    <div class="massage-desc">
+                      <h5 class="font-14 mt-0 text-dark"><%= msg.fullname%></h5>
+                      <p class="text-muted"><%= msg.body%></p>
+                    </div>
+                  </div>
+                </a>
+                <% } %>
+                <% } %>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- end col -->
+
+        <div class="col-xl-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="mt-0 header-title mb-4">رویداد های پیش رو</h4>
+              <ol class="activity-feed mb-0">
+                <% if(events.length>0){ %>
+                <% for (let event of events){ %>
+                <li class="feed-item">
+                  <div class="feed-item-list">
+                    <span class="date text-white-50"><% miladiToShamsi(events.date)%></span>
+                    <a href="/event?eventId=<%= event.id %>"> <span class="activity-text text-white"><%= event.title %></span></a>
+                  </div>
+                </li>
+                <% } %>
+                <% } %>
+
+              </ol>
+
+            </div>
+          </div>
+        </div>
+        <!-- end col -->
+
+        <div class="col-xl-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="mt-0 header-title mb-4">منبع اجتماعی</h4>
+              <div class="text-center">
+                <div class="social-source-icon lg-icon mb-3">
+                  <i class="mdi mdi-facebook h2 bg-primary text-white"></i>
+                </div>
+                <h5 class="font-16"><a href="#" class="text-dark">فیسبوک - <span class="text-muted">125 فروش</span> </a></h5>
+                <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است..</p>
+                <a href="#" class="text-primary font-14">مطالعه بیشتر <i class="mdi mdi-chevron-right"></i></a>
+              </div>
+              <div class="row mt-5">
+                <div class="col-md-4">
+                  <div class="social-source text-center mt-3">
+                    <div class="social-source-icon mb-2">
+                      <i class="mdi mdi-facebook h5 bg-primary text-white"></i>
+                    </div>
+                    <p class="font-14 text-muted mb-2">125 فروش</p>
+                    <h6>فیسبوک</h6>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="social-source text-center mt-3">
+                    <div class="social-source-icon mb-2">
+                      <i class="mdi mdi-twitter h5 bg-info text-white"></i>
+                    </div>
+                    <p class="font-14 text-muted mb-2">112 فروش</p>
+                    <h6>توییتر</h6>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="social-source text-center mt-3">
+                    <div class="social-source-icon mb-2">
+                      <i class="mdi mdi-instagram h5 bg-pink text-white"></i>
+                    </div>
+                    <p class="font-14 text-muted mb-2">104 فروش</p>
+                    <h6>اینستاگرام</h6>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- end col -->
+      </div>
+      <!-- end row -->
+
+      <div class="row">
+        <div class="col-xl-9">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="mt-0 header-title mb-4">کلاس ها پیش رو</h4>
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">کلاس</th>
+                      <th scope="col">استاد</th>
+                      <th scope="col">شروع</th>
+                      <th scope="col">پایان</th>
+                      <th scope="col">زمان هر جلسه</th>
+                      <th scope="col">تعداد ثبت نام شدگان</th>
+                      <th scope="col"></th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% if(courses.length>0){ %>
+                    <% for(let course of courses){ %>
+                    <tr>
+                      <a href="/course?courseId=<%= course.id %>">
+                        <th scope="row"><%= course.title %> </th>
+                      </a>
+                      <td><% if(course.teacher!==null){ %><%= course.teacher.fullname %><% }else{ %>مشخص نشده <% } %></td>
+                      <td><%= miladiToShamsi(course.start) %> </td>
+                      <td><%= miladiToShamsi(course.end) %> </td>
+                      <td><%= course.sessionTime %>دقیقه </td>
+                      <td>
+                        <%= course.student.length%>
+                      </td>
+                      <td><a class="btn btn-primary" href="/dashboard/courses">مشاهده و ویرایش</a></td>
+                    </tr>
+                    <% } %>
+                    <% } %>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="mt-0 header-title mb-4">اخرین پست ها</h4>
+              <table class="table table-striped mb-0">
+                <tbody>
+                  <% if(blogs.length>0){ %>
+                  <% for(let blog of blogs){ %>
+                  <tr>
+                    <td><%= blog.status %></td>
+                    <td>
+                      <h6 class="mt-0"><%= miladiToShamsi(blog.createdAt) %> </h6>
+                      <p class="text-muted mb-0"><%= blog.title %></p>
+                    </td>
+                    <td>
+                      <a href="/blog?blogId=<%= blog.id %> " class="btn btn-primary btn-sm">
+                        <i class="fas fa-external-link-square-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <% } %>
+                  <% } %>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+
+    </div><!-- container fluid -->
+
+  </div> <!-- Page content Wrapper -->

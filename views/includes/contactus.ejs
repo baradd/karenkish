@@ -1,0 +1,63 @@
+ <!-- Contact Area -->
+ <section class="home-contact-area pb-100">
+   <div class="container-fluid">
+     <div class="row align-items-center">
+       <div class="col-lg-6 pr-0">
+         <div class="contact-img">
+           <img src="/assets/images/contact.png" alt="contact" />
+         </div>
+       </div>
+       <div class="col-lg-6">
+         <div class="home-contact-content">
+           <h2>با ما تماس بگیرید</h2>
+           <form id="contactForm">
+             <div class="row">
+               <div class="col-lg-6 col-sm-6">
+                 <div class="form-group">
+                   <input type="text" name="fullname" id="name" class="form-control" required data-error="نام خود را وارد کنید" placeholder="نام شما" />
+                   <div class="help-block with-errors"></div>
+                 </div>
+               </div>
+
+               <div class="col-lg-6 col-sm-6">
+                 <div class="form-group">
+                   <input type="email" name="email" id="email" class="form-control" required data-error="ایمیل خود را وارد کنید" placeholder="ایمیل شما" />
+                   <div class="help-block with-errors"></div>
+                 </div>
+               </div>
+
+               <div class="col-lg-6 col-sm-6">
+                 <div class="form-group">
+                   <input type="number" name="phone" id="phone_number" required data-error="تلفن خود را وارد کنید" class="form-control" placeholder="تلفن شما" />
+                   <div class="help-block with-errors"></div>
+                 </div>
+               </div>
+
+               <div class="col-lg-6 col-sm-6">
+                 <div class="form-group">
+                   <input type="text" name="title" id="msg_subject" class="form-control" required data-error="موضوع خود را وارد کنید" placeholder="موضوع شما" />
+                   <div class="help-block with-errors"></div>
+                 </div>
+               </div>
+               <div class="col-lg-12 col-md-12">
+                 <div class="form-group">
+                   <textarea name="body" class="form-control" id="message" cols="30" rows="5" required data-error="پیام خود را بنویسید" placeholder="پیام شما"></textarea>
+                   <div class="help-block with-errors"></div>
+                 </div>
+               </div>
+
+               <div class="col-lg-12 col-md-12">
+                 <button type="button" onclick="contactUs()" class="default-btn page-btn box-btn">
+                   ارسال پیام
+                 </button>
+                 <div id="msgSubmit" class="h3 text-center hidden"></div>
+                 <div class="clearfix"></div>
+               </div>
+             </div>
+           </form>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- End Contact Area -->

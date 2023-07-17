@@ -1,0 +1,57 @@
+ <!-- Start Page Title Area -->
+ <div class="banner-area events-bg">
+   <div class="d-table">
+     <div class="d-table-cell">
+       <div class="container">
+         <div class="page-title-content">
+           <h2>رویدادها</h2>
+           <ul>
+             <li>
+               <a href="/"> صفحه اصلی </a>
+               <i class="flaticon-left-arrow"></i>
+               <p class="active">رویدادها</p>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <!-- End Page Title Area -->
+
+ <!-- Events -->
+ <section class="events">
+   <div class="container">
+     <div class="row">
+       <% if(events.length>0){ %>
+       <% for(let event of events){ %>
+       <div class="col-lg-4 col-md-6">
+         <div class="single-events">
+           <div class="events-img">
+             <a href="/event?eventId=<%= event.id %>">
+               <img src="/assets/images/events/<%= event.image%>" alt="events" />
+             </a>
+           </div>
+           <div class="content">
+             <a href="/event?eventId=<%= event.id %>">
+               <h2><%= event.title %> </h2>
+               <p class="calender">
+                 <%= miladiToShamsi(event.date)%> <i class="flaticon-calendar"></i>
+               </p>
+               <p>
+                 <%- truncateTo200(event.body) %>
+               </p>
+               <a href="/event?eventId=<%= event.id %>" class="line-bnt">ادامه خواندن <i class="flaticon-left-arrow"></i></a>
+           </div>
+         </div>
+       </div>
+       <% } %>
+       <% } %>
+     </div>
+   </div>
+
+   <%- include("./includes/pagination.ejs") %>
+ </section>
+ <!-- End Events  -->
+
+ <%- include('./includes/contactus.ejs') %>

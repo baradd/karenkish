@@ -1,0 +1,73 @@
+  <!-- Start Page Title Area -->
+  <div class="banner-area admission">
+    <div class="d-table">
+      <div class="d-table-cell">
+        <div class="container">
+          <div class="page-title-content">
+            <h2>ثبت نام</h2>
+            <ul>
+              <li>
+                <a href="/"> صفحه اصلی </a>
+                <i class="flaticon-left-arrow"></i>
+                <p class="active">ثبت نام</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Page Title Area -->
+
+  <!-- Terms & Conditions -->
+
+  <section class="admission-area">
+    <div class="container">
+      <div class="section-tittle">
+        <h2>قوانین ثبت نام</h2>
+        <p>
+          لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده است.لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده است.لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده است.لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده است.لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده است.
+        </p>
+      </div>
+      <div class="admission-form">
+        <h2>فرم ثبت نام</h2>
+        <%- include("./includes/errors.ejs") %>
+        <form action="/enroll?eventId=<%= eventId%>" method="POST">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label>نام</label>
+              <input type="text" class="form-control" placeholder="نام" name="firstname" />
+            </div>
+            <div class="form-group col-md-6">
+              <label>نام خانوادگی</label>
+              <input type="text" class="form-control" placeholder="نام خانوادگی" name="lastname" />
+            </div>
+            <div class="form-group col-md-6">
+              <label>ایمیل</label>
+              <input type="email" class="form-control" placeholder="ایمیل" name="email" />
+            </div>
+            <div class="form-group col-md-6">
+              <label>موبایل</label>
+              <input type="text" class="form-control" placeholder="موبایل" name="phone" />
+            </div>
+
+
+          </div>
+          <div class="form-group col-md-12">
+            <label for="inputAddress2">آدرس</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="آدرس" name="address" />
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" name="rules" />
+            <label class="form-check-label" for="gridCheck">
+              موافقت با تمام شرایط و ضوابط
+            </label>
+          </div>
+          <button href="#" class="box-btn">عضویت</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Terms & Conditions -->
