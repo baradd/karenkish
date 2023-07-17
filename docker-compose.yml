@@ -8,6 +8,10 @@ services:
       target: production
     image: karen:0.0.1
     restart: unless-stopped
+    environment:
+      - VIRTUAL_HOST=karenkish.ir
+      - VIRTUAL_PORT=80
+      - LETSENCRYPT_HOST=karenkish.ir
     env_file:
       - .env.production
     networks:
