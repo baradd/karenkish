@@ -16,7 +16,7 @@ const passport = require("passport");
 //*Confuguration app
 const app = express();
 
-dotenv.config({ path: "./config/dotenv.env" });
+dotenv.config({ path: "./.env.production" });
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(fileUpload());
