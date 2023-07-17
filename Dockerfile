@@ -1,20 +1,16 @@
-# Use an official Node.js runtime as the base image
-FROM node:14
-
-# Set the working directory inside the container
-WORKDIR /
-
-# Copy package.json and package-lock.json to the working directory
+# Build stage
+FROM node:14 AS build
+WORKDIR /app
 COPY package*.json ./
-
-# Install Node.js dependencies
 RUN npm install
-
-# Copy the rest of the application source code to the working directory
 COPY . .
+RUN npm run build
 
-# Expose the port on which your Node.js application is listening
+# Production stage
+FROM node:14 AS production
+WORKDIR /app
+COPY --from=build /app/package*.json ./
+RUN npm install --only=production
+COPY --from=build /app/build ./build
 EXPOSE 80
-
-# Define the command to run your Node.js application
 CMD [ "node", "app.js" ]
