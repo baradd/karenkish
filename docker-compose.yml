@@ -1,0 +1,56 @@
+version: '3.8'
+services:
+  karen-app:
+    container_name: karen
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    image: karen:0.0.1
+    restart: unless-stopped
+    env_file:
+      - .env.production
+    networks:
+      - karne-net
+    volumes:
+      - ./assets:/app/assets
+      - ./statics-files:/app/statics
+    depends_on:
+      - karen-mongo
+
+  karen-mongo:
+    container_name: karen-mongo
+    image: mongo:4.4.8
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: aD5DhJAKq9FBG5E1RDSA
+    networks:
+      - karen-net
+    volumes:
+      - mongo-data:/data/db
+
+  mongo-express:
+    image: mongo-express:latest
+    container_name: karen-mongo-express
+    restart: unless-stopped
+    environment:
+      - ME_CONFIG_BASICAUTH_USERNAME=karen
+      - ME_CONFIG_BASICAUTH_PASSWORD=karen@mongo@123
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=root
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=aD5DhJAKq9FBG5E1RDSA
+      - ME_CONFIG_MONGODB_URL=mongodb://root:aD5DhJAKq9FBG5E1RDSA@karen-mongo:27017
+      - VIRTUAL_HOST=mongo.karenkish.ir
+      - VIRTUAL_PORT=8081
+      - LETSENCRYPT_HOST=mongo.karenkish.ir
+    networks:
+      - karen-net
+
+networks:
+  karen-net:
+    external: true
+    name: nginx-proxy
+
+volumes:
+  mongo-data:
+    name: karen-mongo-data

@@ -1,0 +1,33 @@
+{
+  "name": "karenkish.ir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app"
+  },
+  "author": "Mohammad Tavassolian",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-dir": "^1.0.2",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.7",
+    "express": "^4.18.0",
+    "express-ejs-layouts": "^2.5.1",
+    "express-fileupload": "^1.3.1",
+    "express-session": "^1.17.2",
+    "jalali-moment": "^3.3.11",
+    "mongoose": "^6.3.1",
+    "node-fetch": "^2.6.7",
+    "nodemon": "^3.0.1",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "sharp": "^0.30.4",
+    "shortid": "^2.2.16",
+    "yup": "^0.32.11"
+  }
+}
