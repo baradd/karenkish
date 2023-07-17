@@ -11,7 +11,7 @@ services:
     env_file:
       - .env.production
     networks:
-      - karne-net
+      - karen-net
     volumes:
       - ./assets:/app/assets
       - ./statics-files:/app/statics
